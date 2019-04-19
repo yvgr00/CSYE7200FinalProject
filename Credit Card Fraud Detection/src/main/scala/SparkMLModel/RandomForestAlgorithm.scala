@@ -53,7 +53,7 @@ object RandomForestAlgorithm {
     val rf = new RandomForestClassifier()
       .setLabelCol("iLabel")
       .setFeaturesCol("assembledFeatures")
-      .setNumTrees(10)
+      .setNumTrees(30)
 
     val pipeline = new Pipeline()
       .setStages(Array(labelIndexer,featureAssembler, rf))
