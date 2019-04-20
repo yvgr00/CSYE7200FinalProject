@@ -17,6 +17,8 @@ Clone the repository:
 ```
 git clone https://github.com/yvgr00/CSYE7200FinalProject.git
 ```
+Data Source : <a href = "https://www.kaggle.com/mlg-ulb/creditcardfraud"> Credit Card Dataset </a>
+
 For your kafka setup --> open three terminal to run
 ```
 1.First start a ZooKeeper server if you don't already have one
