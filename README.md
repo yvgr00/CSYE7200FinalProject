@@ -1,5 +1,4 @@
-# CSYE7200FinalProject
-# CREDIT CARD FRAUD DETECTION USING APACHE KAFKA AND SPARK STREAMING - SCALA 
+# CREDIT CARD FRAUD DETECTION USING APACHE KAFKA AND SPARK STREAMING - CSYE 7200
 
 In order to run our project, we need to have **Apache kafka and Spark** installed 
 
