@@ -43,3 +43,14 @@ In this project, we used Random forest classifier model to predict whether its a
 
 
 <a href =  "https://github.com/yvgr00/CSYE7200FinalProject/blob/master/Credit%20Card%20Fraud%20Detection/src/main/scala/SparkMLModel/RandomForestAlgorithm.scala"> Random Forest Classifier </a>
+
+
+
+
+
+
+Achieved Acceptance Criteria:
+```
+Precision of target variable 1 = 0.77
+Recall of target variable 1 = 0.84
+```
