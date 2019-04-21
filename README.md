@@ -64,7 +64,7 @@ Compared the result and we used the Random Forest Classifier model in our Spark 
 
 
 
-Achieved Acceptance Criteria:
+**Achieved Acceptance Criteria:**
 ``` scala
 val metrics = new MulticlassMetrics(predictRdd)
     // Confusion matrix
