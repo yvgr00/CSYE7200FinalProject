@@ -18,7 +18,9 @@ Clone the repository:
 ```
 git clone https://github.com/yvgr00/CSYE7200FinalProject.git
 ```
-Data Source : <a href = "https://www.kaggle.com/mlg-ulb/creditcardfraud"> Credit Card Dataset </a>
+
+As the volume of the data is so huge, we recommend to download the data from the link and place it in the resource folder inside src
+Data Source : <a href = "https://www.kaggle.com/mlg-ulb/creditcardfraud"> Credit Card Dataset </a> 
 
 For your kafka setup --> open three terminal to run
 ```
@@ -32,6 +34,8 @@ See the topic by running the below command
 kafka-topics.bat --list --bootstrap-server localhost:9092
 ```
 Now when you run the source code in the repository, your spark streaming will be started and subscribe to kafka topic.
+
+<a href = "https://github.com/yvgr00/CSYE7200FinalProject/blob/master/Credit%20Card%20Fraud%20Detection/src/main/scala/KafkaIntegration/KafkaStreamingIntegration.scala"> Kafka-Spark Streaming </a>
 ```
 val conf = new SparkConf().setMaster("local[*]").setAppName("KafkaProject")
 val ssc = new StreamingContext(conf,Seconds(1))
@@ -39,18 +43,22 @@ ssc.start()
 ssc.awaitTermination()
 ```
 
-In this project, we used Random forest classifier model to predict whether its a fraudulent transaction or not.
+In this project, we used Random forest classifier model and Gradient Boosting Tree model to detect the fraudulent transactions
+Compared the result and we used the Random Forest Classifier model in our Spark Streaming data.
 
+**Random Forest**
 
 <a href =  "https://github.com/yvgr00/CSYE7200FinalProject/blob/master/Credit%20Card%20Fraud%20Detection/src/main/scala/SparkMLModel/RandomForestAlgorithm.scala"> Random Forest Classifier </a>
 
-
-
+**Gradient Boosted Tree**
+<a href = "https://github.com/yvgr00/CSYE7200FinalProject/blob/master/CSYE7200CreditCardFraudDetection/src/main/scala/MLModel/GBMModel/GradientBoostingMachine.scala"> Gradient Boosting Tree </a>
 
 
 
 Achieved Acceptance Criteria:
 ```
-Precision of target variable 1 = 0.77
-Recall of target variable 1 = 0.84
+Precision of Class = 0 --> 0.99
+Precision of Class = 1 --> 0.77
+Recall of Class = 0 --> 0.99
+Recall of Class =1 --> 0.84
 ```
