@@ -124,10 +124,7 @@ object StreamingML {
 
      val finalPredictions = predictions.select("Class","probability","prediction")
 
-      finalPredictions.coalesce(1)
-        .write.format("com.databricks.spark.csv")
-        .option("header", "true")
-        .save("src/main/resources/predictions.csv")
+     
 
      finalPredictions.show()
 
