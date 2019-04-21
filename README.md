@@ -87,3 +87,6 @@ Precision of Class = 1 --> 0.77
 Recall of Class = 0 --> 0.99
 Recall of Class =1 --> 0.84
 ```
+**Created unit test cases for checking precision and recall**
+
+Thank you :)
