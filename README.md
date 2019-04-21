@@ -1,5 +1,11 @@
 # CREDIT CARD FRAUD DETECTION USING APACHE KAFKA AND SPARK STREAMING - CSYE 7200
 
+```
+Authors:
+Nancy Jemimah Packiyanathan
+Venu Gopal Reddy Yerragunta
+```
+
 **Caution : Please be aware of the version compatability so that you won't be getting an error**
 
 In order to run our project, we need to have **Apache kafka and Spark** installed 
@@ -53,12 +59,29 @@ Compared the result and we used the Random Forest Classifier model in our Spark 
 <a href =  "https://github.com/yvgr00/CSYE7200FinalProject/blob/master/Credit%20Card%20Fraud%20Detection/src/main/scala/SparkMLModel/RandomForestAlgorithm.scala"> Random Forest Classifier </a>
 
 **Gradient Boosted Tree**
+
 <a href = "https://github.com/yvgr00/CSYE7200FinalProject/blob/master/CSYE7200CreditCardFraudDetection/src/main/scala/MLModel/GBMModel/GradientBoostingMachine.scala"> Gradient Boosting Tree </a>
 
 
 
 Achieved Acceptance Criteria:
-```
+``` scala
+val metrics = new MulticlassMetrics(predictRdd)
+    // Confusion matrix
+    println("Confusion matrix:")
+    println(metrics.confusionMatrix)
+
+    // Precision by label
+    val labels = metrics.labels
+    labels.foreach { l =>
+      println(s"Precision($l) = " + metrics.precision(l))
+    }
+
+    // Recall by label
+    labels.foreach { l =>
+      println(s"Recall($l) = " + metrics.recall(l))
+    }
+
 Precision of Class = 0 --> 0.99
 Precision of Class = 1 --> 0.77
 Recall of Class = 0 --> 0.99
