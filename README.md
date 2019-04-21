@@ -83,9 +83,9 @@ val metrics = new MulticlassMetrics(predictRdd)
     }
 
 Precision of Class = 0 --> 0.99
-Precision of Class = 1 --> 0.77
+Precision of Class = 1 --> 0.78
 Recall of Class = 0 --> 0.99
-Recall of Class =1 --> 0.84
+Recall of Class =1 --> 0.91
 ```
 **Created unit test cases for checking precision and recall**
 
