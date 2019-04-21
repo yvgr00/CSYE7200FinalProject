@@ -15,12 +15,12 @@ In order to run our project, we need to have **Apache kafka and Spark** installe
 
 <a href = "https://spark.apache.org/downloads.html"> Spark Guide </a>
 
-Now install git:
+**Now install git:**
 ```
 sudo yum install -y git
 sudo apt-get install git
 ```
-Clone the repository:
+**Clone the repository:**
 ```
 git clone https://github.com/yvgr00/CSYE7200FinalProject.git
 ```
@@ -28,9 +28,9 @@ git clone https://github.com/yvgr00/CSYE7200FinalProject.git
 As the volume of the data is so huge, we recommend to download the data from the link and place it in the resource folder inside src
 
 
-Data Source : <a href = "https://www.kaggle.com/mlg-ulb/creditcardfraud"> Credit Card Dataset </a> 
+**Data Source** : <a href = "https://www.kaggle.com/mlg-ulb/creditcardfraud"> Credit Card Dataset </a> 
 
-For your kafka setup --> open three terminal to run
+**For your kafka setup --> open three terminal to run**
 ```
 1.First start a ZooKeeper server if you don't already have one
 zookeeper-server-start.bat .../.../config/zookeeper.properties
@@ -41,7 +41,7 @@ kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 
 See the topic by running the below command
 kafka-topics.bat --list --bootstrap-server localhost:9092
 ```
-Now when you run the source code in the repository, your spark streaming will be started and subscribe to kafka topic.
+Now when you run the source code in the repository, your **spark streaming** will be started and subscribe to kafka topic.
 
 <a href = "https://github.com/yvgr00/CSYE7200FinalProject/blob/master/Credit%20Card%20Fraud%20Detection/src/main/scala/KafkaIntegration/KafkaStreamingIntegration.scala"> Kafka-Spark Streaming </a>
 ```
