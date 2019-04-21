@@ -20,6 +20,8 @@ git clone https://github.com/yvgr00/CSYE7200FinalProject.git
 ```
 
 As the volume of the data is so huge, we recommend to download the data from the link and place it in the resource folder inside src
+
+
 Data Source : <a href = "https://www.kaggle.com/mlg-ulb/creditcardfraud"> Credit Card Dataset </a> 
 
 For your kafka setup --> open three terminal to run
