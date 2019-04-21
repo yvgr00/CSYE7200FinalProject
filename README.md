@@ -89,4 +89,8 @@ Recall of Class =1 --> 0.91
 ```
 **Created unit test cases for checking precision and recall**
 
+**Presentation** 
+
+<a href = "https://github.com/yvgr00/CSYE7200FinalProject/blob/master/Big%20Data%20Final%20Presentation.pptx"> Final Presentation </a>
+
 Thank you :)
